@@ -16,6 +16,7 @@ const viewspath =path.join(__dirname,'../templates/views')
 const partialpath=path.join(__dirname,'../templates/partials')
 
 const app=express()
+const port = process.env.PORT || 3000
 
 
 //setup handlebars engine and view location
@@ -95,6 +96,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is starting on port 3000')
 })
