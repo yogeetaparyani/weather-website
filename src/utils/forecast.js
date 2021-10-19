@@ -12,7 +12,7 @@ const forecast=(latitude,longitude,callback)=>{
             callback('Unable to find location',undefined)
         }
         else{
-            callback(undefined,'weather is '+ body.current. weather_descriptions[0]+' and temperature is '+body.current.temperature)
+            callback(undefined,'weather is '+ body.current. weather_descriptions[0]+'with '+ body.current.humidity+' humidity and temperature is '+body.current.temperature)
         }
 
 
